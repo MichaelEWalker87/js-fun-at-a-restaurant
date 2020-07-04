@@ -20,6 +20,11 @@ function refundOrder(removeItem, deliveryOrders){
 decleared var and set it to the order number minus 1
 then placed that var orderNumberArray to index what spot
 to splice
+  the splice method has to spot in the paramitors
+  like this .splice(0,1) the 1st which is 0 tells
+  which index the second 1 tell how many to remove
+  so splice.(0,1) is saying remove the 1st item indexed in the
+  array  
 */
 
 function listItems(orderObt){

@@ -16,17 +16,17 @@ function createMenuItem(itemName, price, foodType){
 // declared funtion with 3 paramitors, made an object litteral the holds 3 values
 //returned the object literal
 
-function addIngredients(ingredient1, ingredient2){
-    if (!ingredient2.includes(ingredient1)){
-      ingredient2.push(ingredient1);
+function addIngredients(ingredient1, ingredientArray){
+    if (!ingredientArray.includes(ingredient1)){
+      ingredientArray.push(ingredient1);
     }
 }
 /* declared function addIngredients added 2 paramitors
-  used the push to add the ingredient1 to the array ingredient2
+  used the push to add the ingredient1 to the array ingredientArray
   used an if statment and the bang operator to say if
-  includes1 array element does not equal anything
-  in array ingredient2 then push the element to the array
-  ingredient2
+  includes1 does not equal anything
+  in array ingredientArray then push the element to the array
+  ingredientArray
 */
 
 function formatPrice(initialPrice){
