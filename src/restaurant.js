@@ -56,7 +56,7 @@ function addMenuItem(rest, item){
 
 
 
-
+//
 
 function removeMenuItem(rest2, item2, meal = 'dinner'){
   var pos
@@ -83,7 +83,7 @@ function removeMenuItem(rest2, item2, meal = 'dinner'){
 // if pos does not equal undefined then
 // splice at postion of pos number which will be the number of index in array remove one item
 //then return string
-//if pos is undefined then it will return the other string  
+//if pos is undefined then it will return the other string
 
 
 
