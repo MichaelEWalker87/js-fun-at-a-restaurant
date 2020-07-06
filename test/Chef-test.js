@@ -74,7 +74,7 @@ describe("Chef (class)", function() {
 
   });
 
-  it.skip("should confirm if a requested item is not on the menu", function () {
+  it("should confirm if a requested item is not on the menu", function () {
     var restaurant = createRestaurant("Best Bakery Ever");
     var chef = new Chef("Scott", restaurant);
 
