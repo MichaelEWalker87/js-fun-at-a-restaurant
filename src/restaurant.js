@@ -17,8 +17,8 @@ function createRestaurant(name){
 function addMenuItem(rest, item){
 
   if (!rest.menus[item.type].includes(item)) {
-  rest.menus[item.type].push(item)
-}
+    rest.menus[item.type].push(item)
+  }
 };
 
 /* same idea as commented out below but useing bracket notion
@@ -58,18 +58,19 @@ function addMenuItem(rest, item){
 
 //
 
-function removeMenuItem(rest2, item2, meal = 'dinner'){
+function removeMenuItem(restaurant, item, meal = 'dinner'){
   var pos
-  for (var i = 0; i < rest2.menus[meal].length; i++){
-    if (rest2.menus[meal][i].name === item2){
+  for (var i = 0; i < restaurant.menus[meal].length; i++){
+    if (restaurant.menus[meal][i].name === item){
       pos = i
+      break
     }
   }
   if (pos !== undefined){
-      rest2.menus[meal].splice(pos, 1);
-      return `No one is eating our ${item2} \- it has been removed from the ${meal} menu\!`
+      restaurant.menus[meal].splice(pos, 1);
+      return `No one is eating our ${item} \- it has been removed from the ${meal} menu\!`
   } else {
-      return `Sorry, we don't sell ${item2}, try adding a new recipe\!`
+      return `Sorry, we don't sell ${item}, try adding a new recipe\!`
   }
 }
 
