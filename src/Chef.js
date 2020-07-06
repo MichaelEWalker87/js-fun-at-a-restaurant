@@ -11,10 +11,8 @@ class Chef {
   greetCustomer(name1, morning = false){
     if(morning === true){
       return `Good morning, ${name1}!`
-    }else {
+    }
     return `Hello, ${name1}!`
-    };
-
   };
 
 
